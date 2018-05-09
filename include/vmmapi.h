@@ -161,5 +161,7 @@ int	vm_create_vcpu(struct vmctx *ctx, int vcpu_id);
 
 int	vm_get_cpu_state(struct vmctx *ctx, void *state_buf);
 
+int	vm_get_rpmb_key(struct vmctx *ctx, void *key);
+
 extern bool hugetlb;
 #endif	/* _VMMAPI_H_ */

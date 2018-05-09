@@ -749,3 +749,9 @@ vm_get_cpu_state(struct vmctx *ctx, void *state_buf)
 {
 	return ioctl(ctx->fd, IC_PM_GET_CPU_STATE, state_buf);
 }
+
+int
+vm_get_rpmb_key(struct vmctx *ctx, void *key)
+{
+	return ioctl(ctx->fd, IC_GET_RPMB_KEY, key);
+}

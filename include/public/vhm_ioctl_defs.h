@@ -105,6 +105,10 @@
 #define IC_ID_PM_BASE                   0x60UL
 #define IC_PM_GET_CPU_STATE            _IC_ID(IC_ID, IC_ID_PM_BASE + 0x00)
 
+/* RPMB */
+#define IC_ID_RPMB                      0x70UL
+#define IC_GET_RPMB_KEY                _IC_ID(IC_ID, IC_ID_RPMB + 0x00)
+
 /**
  * struct vm_memseg - memory segment info for guest
  *
